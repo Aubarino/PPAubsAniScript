@@ -2,7 +2,7 @@
 A Universally Decent Animation Script Base for People Playground, To make Gif-like animations.
 
 
-How to setup and use Aubarino's Animation System...
+<h2> How to setup and use Aubarino's Animation System... <h2/>
 
 You may use this in any way you want, Just give Credit in the Mod Description that you used my system,
 These rules do not apply to Me Aubarino when i use my own system obviously.
