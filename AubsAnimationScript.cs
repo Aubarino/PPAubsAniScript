@@ -64,9 +64,10 @@ namespace Mod
                 AniClock = AniDelay;
                 }else{
                     AniInstance.GetComponent<SpriteRenderer>().sprite = (AniFramePort[AniFrame]);                    
-                    Debug.Log("AniFrame " + AniFrame);
+                    //debug function (debug only)
+                    //Debug.Log("AniFrame " + (AniFrame + 1));
                     AniFrame += 1;
-                    //sets the frame
+                    // ^ ^ ^ sets the frame
                     }
             }
         }
