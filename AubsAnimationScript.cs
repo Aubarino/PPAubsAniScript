@@ -59,10 +59,12 @@ namespace Mod
         //checks if clock is outside delay range, then resets and checks if the max frame is hit, then it restarts the animation
         if (AniClock >= AniDelay){
             AniClock = 0;
-            if (AniFrame >= AniMax){
+            if (AniFrame > (AniMax - 1)){
                 AniFrame = 0;
+                AniClock = AniDelay;
                 }else{
                     AniInstance.GetComponent<SpriteRenderer>().sprite = (AniFramePort[AniFrame]);                    
+                    Debug.Log("AniFrame " + AniFrame);
                     AniFrame += 1;
                     //sets the frame
                     }
