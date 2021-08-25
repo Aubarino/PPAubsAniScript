@@ -48,7 +48,7 @@ Such as "myanimation1.png, myanimation2.png, myanimation3.png" individually for 
 
 * 6. Edit the AniFramesLoad parameters in the above template in your object,
 the format is the following ("the texture location and their name without the number or .png", total amount of frames,
-the rescale DEVIDED BY, The Instance DO NOT EDIT).
+the rescale DIVIDED BY, The Instance DO NOT EDIT).
 
 * 7. Edit the .AnimationData parameters, following the following format
 (the total amount of frames... again, The Delay, The Instance DO NOT EDIT).
