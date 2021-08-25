@@ -24,7 +24,7 @@ You can modify this however you want, But to share a modified version of this yo
                         GameObject internalinstance = LodInstance;
 
                         Sprite[] aniarray = new Sprite[] {};
-                        for(int i = 1; i <= (internalmaxframe + 1); i++){
+                        for(int i = 1; i <= internalmaxframe; i++){
                             aniarray = aniarray.Concat(new Sprite[] { ModAPI.LoadSprite(internaltextureloc + i + ".png", internalrescale) }).ToArray();
                             }
 
