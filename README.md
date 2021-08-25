@@ -15,21 +15,21 @@ You can modify this however you want, But to share a modified version of this yo
 * 2. add AubsAnimationScript.cs to your mod.json file
 * 3. Open the main c# file of your mod, place the following inside the mod class but NOT inside the Main function!
 
-        //function that loads animation frames to be used in an animation
-        public static void AniFramesLoad(string TextureLoc, int maxFrame, int Rescale, GameObject LodInstance)
-        {
-        int internalmaxframe = maxFrame;
-        string internaltextureloc = TextureLoc;
-        int internalrescale = Rescale;
-        GameObject internalinstance = LodInstance;
+                        //function that loads animation frames to be used in an animation
+                        public static void AniFramesLoad(string TextureLoc, int maxFrame, int Rescale, GameObject LodInstance)
+                        {
+                        int internalmaxframe = maxFrame;
+                        string internaltextureloc = TextureLoc;
+                        int internalrescale = Rescale;
+                        GameObject internalinstance = LodInstance;
 
-        Sprite[] aniarray = new Sprite[] {};
-        for(int i = 1; i <= (internalmaxframe + 1); i++){
-            aniarray = aniarray.Concat(new Sprite[] { ModAPI.LoadSprite(internaltextureloc + i + ".png", internalrescale) }).ToArray();
-            }
-        
-        internalinstance.GetComponent<AubsAnimationScript>().FrameData(aniarray);
-        }
+                        Sprite[] aniarray = new Sprite[] {};
+                        for(int i = 1; i <= (internalmaxframe + 1); i++){
+                            aniarray = aniarray.Concat(new Sprite[] { ModAPI.LoadSprite(internaltextureloc + i + ".png", internalrescale) }).ToArray();
+                            }
+
+                        internalinstance.GetComponent<AubsAnimationScript>().FrameData(aniarray);
+                        }
 
 * 4. in your object, in the AfterSpawn area add the following like you would Any Other element of your object...
 
