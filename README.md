@@ -60,3 +60,13 @@ edit the "Instance.GetComponent<SpriteRenderer>().sprite" parameter to be the pa
 
 Talk to Aubarino#8007 on discord for more help 'n contact with me.
 
+ 
+<h2> EXTRA STUFF </h2>
+the following extra things can be editted via somethng such as this
+"Instance.GetComponent<AubsAnimationScript>().ExperimentalColCyc = true;"
+As an example.
+
+* "ExperimentalColCyc" a boolean value, defaults to false but if set to true will set the collider to be accurate to EACH FRAME...
+* "PauseAnimation" a boolean value, defaults to false. if true the animation is paused, if false it isn't.
+* "ResetWhenPause" a boolean value, defaults to false. if the animation is paused and this is set to true, then the animation will reset to the first frame.
+* "AniFrame" a int value, Carefull with directly setting this! this is the animation frame value from 0 'n up.
